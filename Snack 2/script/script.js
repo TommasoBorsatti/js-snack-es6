@@ -42,11 +42,9 @@ console.log(Squadre);
 
 const ArrayMisteryo = [];
 
-for (var i = 0; i < Squadre.length; i++) {
-  ArrayMisteryo.push({
-    nome: Squadre[i].nome,
-    falliSubiti: Squadre[i].falliSubiti,
-  });
+for (let i = 0; i < Squadre.length; i++) {
+const {nome, falliSubiti} = Squadre[i];
+ArrayMisteryo.push(nome, falliSubiti);
 }
 
 console.log(ArrayMisteryo);
