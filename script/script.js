@@ -18,9 +18,9 @@ const Bici = [
   },
 ];
 
-var biciLight = Bici[0];
+let biciLight = Bici[0];
 
-for (var i = 1; i < Bici.length; i++) {
+for (let i = 1; i < Bici.length; i++) {
 
   if (Bici[i].peso < biciLight.peso) {
     biciLight = Bici[i]
