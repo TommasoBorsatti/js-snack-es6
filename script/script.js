@@ -27,5 +27,7 @@ for (var i = 1; i < Bici.length; i++) {
   }
 }
 
+console.log(Bici);
+
 var {nome, peso} = biciLight;
-console.log(`La bici più leggera è la ${nome} che pesa esattamente ${peso} grammi!` );
+console.log(`La bici più leggera è la ${nome} che pesa esattamente ${peso} grammi!`);
