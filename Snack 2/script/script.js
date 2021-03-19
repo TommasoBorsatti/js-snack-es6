@@ -44,7 +44,7 @@ const ArrayMisteryo = [];
 
 for (let i = 0; i < Squadre.length; i++) {
 const {nome, falliSubiti} = Squadre[i];
-ArrayMisteryo.push(nome, falliSubiti);
+ArrayMisteryo.push({nome, falliSubiti});
 }
 
 console.log(ArrayMisteryo);
