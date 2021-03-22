@@ -33,18 +33,31 @@ const Squadre = [
   },
 ];
 
-for (let i = 0; i < Squadre.length; i++) {
-  Squadre[i].puntiFatti = getRandom(0,18);
-  Squadre[i].falliSubiti = getRandom(0,20);
-}
+
 
 console.log(Squadre);
 
-const ArrayMisteryo = [];
+const ArrayMisteryo = Squadre.map((element) => {
+  element.puntiFatti = getRandom(0,18);
+  element.falliSubiti = getRandom(0,20);
+  let { nome, falliSubiti: falli /* con alias*/} = element;
+  return {nome, falli};
 
-for (let i = 0; i < Squadre.length; i++) {
-const {nome, falliSubiti} = Squadre[i];
-ArrayMisteryo.push({nome, falliSubiti});
-}
+});
+
 
 console.log(ArrayMisteryo);
+
+
+
+
+// for (let i = 0; i < Squadre.length; i++) {
+//   Squadre[i].puntiFatti = getRandom(0,18);
+//   Squadre[i].falliSubiti = getRandom(0,20);
+// }
+
+
+// for (let i = 0; i < Squadre.length; i++) {
+// const {nome, falliSubiti} = Squadre[i];
+// ArrayMisteryo.push({nome, falliSubiti});
+// }
